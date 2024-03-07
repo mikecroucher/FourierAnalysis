@@ -36,7 +36,7 @@ for i=1:NoD
         text(0,1,sprintf('   cos(t)*\\delta(t) ','Interpreter', 'latex'),'FontSize',20)
         text(0.1,1.1,"Fully defined in time domain",'FontSize',20)
         subplot(122)
-        text(.1,1.2,sprintf('   F\\{cos(t)*\\delta(t=0)\\} = 1','Interpreter', 'latex'),'FontSize',20)
+        text(.1,1.2,sprintf('   F\\{cos(t)*\\delta(t)\\} = 1','Interpreter', 'latex'),'FontSize',20)
         text(0.1,1.1,"   Undefined in frequency domain",'FontSize',20)
         pause(2)
     end
