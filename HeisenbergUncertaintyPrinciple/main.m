@@ -40,7 +40,7 @@ for i=1:NoD
         text(0.1,1.1,"   Undefined in frequency domain",'FontSize',20)
         pause(2)
     end
-    if i == 100
+    if i == NoD
         subplot(121)
         text(0,1.1,sprintf('   cos(t) ','Interpreter', 'latex'),'FontSize',20)
         text(0.1,1.2,"Undefined in time domain",'FontSize',20)
