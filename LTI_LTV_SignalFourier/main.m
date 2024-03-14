@@ -6,8 +6,8 @@ clc,clear all,close all;
 Ts = 1e-2; % Sampling Periode
 Fs = 1/Ts; % Sampling Freq
 t = (0:Ts:2-Ts)'; % Time Vec
-NoD = size(t,1); % Number Of Data
-f0 = 5;  % Signal Freq
+NoD = size(t,1);  % Number Of Data
+f0 = 5;   % Signal Freq
 f1 = 10;  % Signal Freq
 TISignal = 1*cos(2*pi*f0*t) + 1*cos(2*pi*f1*t); % LTI Signal
 TVSignal = [1*cos(2*pi*f0*t(1:end/2)); 1*cos(2*pi*f1*t(end/2:end-1))]; % LTV Signal
