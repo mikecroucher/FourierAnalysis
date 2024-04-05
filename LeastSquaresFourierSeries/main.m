@@ -42,13 +42,13 @@ for NoH = 1:NoHmax
     plot(TimeVec,SignalSquareWave,'r',LineWidth=5),hold on,grid
     plot(TimeVec,FSsignalSquareWave,'k',LineWidth=3)
     title(["Square Wave LSE Based Fourier Series Decomposition", "Number of Harmonics -> "+num2str(NoH)])
-    xlabel("Time [Sn]"),ylabel("Square Wave"),axis([-2 2 -1.5 1.5])
+    xlabel("Time [Sn]"),ylabel("Square Wave"),axis([min(TimeVec) max(TimeVec) -1.5 1.5])
 
     subplot(122)
     plot(TimeVec,SignalSawWave,'r',LineWidth=5),hold on,grid
     plot(TimeVec,FSsignalSawWave,'k',LineWidth=3)
     title(["SawTooth Wave LSE Based Fourier Series Decomposition", "Number of Harmonics -> "+num2str(NoH)])
-    xlabel("Time [Sn]"),ylabel("SawTooth Wave"),axis([-2 2 -1.5 1.5])
+    xlabel("Time [Sn]"),ylabel("SawTooth Wave"),axis([min(TimeVec) max(TimeVec) -1.5 1.5])
 
     drawnow
 end
