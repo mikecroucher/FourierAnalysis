@@ -6,7 +6,6 @@ clc,clear,close all,warning off;
 
 TimeVec = linspace(-2,2,1e3)';
 SignalSquareWave = square(TimeVec*2*pi);
-SignalSawWave = sawtooth(TimeVec*2*pi);
 NoH = 1e2; % Number of Harmonics
 
 
@@ -24,7 +23,7 @@ P = 1e2 * eye(model_oder,model_oder);
 
 
 figure('units','normalized','outerposition',[0 0 1 1],'color','w')
-for i = 1:size(SignalSawWave,1)
+for i = 1:size(SignalSquareWave,1)
 
     [xRlse,K,P] = rlse_online(A(i,:),b(i),xRlse,P);
     FSsignalSquareWave = 0;
